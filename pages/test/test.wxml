@@ -1,0 +1,19 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml\n</text>
+<text>{{msg}}</text>
+<map></map>
+<button bindtap="handleLogin">登录</button>
+<view>code: {{code}}</view>
+<view>openid: {{loginData.openid}}</view>
+<view>session_key: {{loginData.session_key}}</view>
+<button bindtap="handleGetLocation">获取地理位置、城市、天气</button>
+<view>latitude: {{location.latitude}}</view>
+<view>longitude: {{location.longitude}}</view>
+<view>city: {{city}}</view>
+<view>天气: {{weather}}</view>
+<button bindtap="handleScanCode">扫一扫</button>
+<view>scanCodeResult: {{scanCodeResult}}</view>
+<button bindtap="handleGetUserInfoProfile">获取用户信息GetUserInfoProfile</button>
+<view>nickName: {{userInfo.nickName}}</view>
+<image style="width: 100px; height: 100px; background-color: #eeeeee;" src="{{userInfo.avatarUrl}}"></image>
+<button bindtap="handleGetUserInfo">获取用户信息GetUserInfo</button>
